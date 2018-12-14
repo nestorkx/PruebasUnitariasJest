@@ -5,7 +5,7 @@ import rick from '../rick'
 // Guardamos un snapshot y va comparando lo guardado con lo nuevo que llega del data(API)
 describe('Es hora de las instantaneas', () => {
     test('Snapshot', () => {
-        expect(getCharacter(rick)).toMatchSnapshot()
+        // expect(getCharacter(rick)).toMatchSnapshot()
     })
     test('Siempre faltara la instantanea', () => {
         const user = {
@@ -20,9 +20,9 @@ describe('Es hora de las instantaneas', () => {
             id: Math.floor(Math.random() * 20),
             name: "Nestor Kauil"
         }
-        expect(user).toMatchSnapshot({
+        /*expect(user).toMatchSnapshot({
             id: expect.any(Number) // El any siempre pasara la prueba ya que existe la excepcion y acepta cualquier numero
-        })
+        })*/
     })
 })
 
