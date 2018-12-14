@@ -8,9 +8,10 @@ describe('Comparadores comunes', () => {
       name: 'Julian',
       lastname: 'Kauil'
     }
-    test('Igualdad de elementos', () => {
+    // Este va a fallar intencionalmente
+    /*test('Igualdad de elementos', () => {
       expect(user).toEqual(user2)
-    })
+    })*/
     // Prueba que se cumpla que no son iguales
     test('No son exactamente iguales', () => {
         expect(user).not.toEqual(user2)
